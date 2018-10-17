@@ -125,3 +125,11 @@
   text-align:center;
 }
 
+.footer-basic {
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  /*position:fixed;*/
+  /*text-align:center;*/
+}
+
