@@ -1,204 +1,119 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <title>czVPN - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/float.css" />
+    <link rel="stylesheet" type="text/css" href="css/navibar.css" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="czVPN is an offshore based VPN service dedicated to providing only the most secure and reliable services. We use only the highest standards in modern cryptography, and we constantly run security tests to make sure you are safe from exposure.">
-    <title>czVPN - Ultimate VPN Security</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-<link rel="shortcut icon" type="image/png" href="assets/img/czVPN_blue.png"/>
-<title>czVPN - Ultimate VPN Security</title>
-<link rel="shortcut icon" type="image/png" href="assets/img/czVPN_blue.png"/>
-</head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-<body>
-    <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-            <div class="container"><a class="navbar-brand invisible" href="#">czVPN<img class="visible" src="assets/img/czVPN_blue.png" width="64" height="64"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">FAQ</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">How To Install&nbsp;</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="howtolinux.html">Linux</a><a class="dropdown-item" role="presentation" href="howtowindows.html">Windows</a><a class="dropdown-item" role="presentation" href="howtomacos.html">Mac OS</a>
-                                <a
-                                    class="dropdown-item" role="presentation" href="howtoiphone.html">iPhone</a><a class="dropdown-item" role="presentation" href="howtoandroid.html">Android</a></div>
-                        </li>
-                    </ul><span class="navbar-text actions"> <a href="#" class="login">Log In</a><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(15,134,218);">Sign Up</a></span></div>
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+      <script>
+          $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+      
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+      
+                // Store hash
+                var hash = this.hash;
+      
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+          </script>
+  </head>
+
+  <body>
+
+    
+    <div id="navbar">
+          
+      <a href="index.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>
+      <a href="#aboutus"><i class="fas fa-users"></i>&nbsp;&nbsp;About Us</a>  
+      <a href="#pricing"><i class="fas fa-money-bill-alt"></i>&nbsp;&nbsp;Pricing</a>
+      <a href="faq.html"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;FAQ</a>
+      <!----a href=""><i class="fas fa-info-circle"></i>&nbsp;&nbsp;How-To-Use</a> -->
+      <a href="contact.html"><i class="fas fa-envelope-open"></i>&nbsp;&nbsp;Contact Us</a>
+      <a style="float: right" href="dashboard/"><i class="fas fa-user"></i>&nbsp;&nbsp;Sign In</a>
+      <a style="float: right" href="signup.html"><i class="fas fa-user-plus"></i>&nbsp;&nbspSign Up</a>
     </div>
-    </nav>
+        
+    <div class="bg"><br><br><br>
+
+      <img class="float" style="width: 250px; height: 250px" src="img/logo.png" />
+      <br><br>
+      <p class="header-p">czVPN is an offshore VPN service dedicated to providing only the most secure and reliable services to its anonymous customers.</p>
+      <i class="fas fa-arrow-circle-down arrow-down float"></i>
+
     </div>
-    <div></div>
-    <div style="background-color:#0f86da;padding:100px;height:100%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size:50px;color:#ffffff;font-family:'Source Sans Pro', sans-serif;font-style:normal;font-weight:bold;"><strong>czVPN</strong></p>
-                    <p style="color:#dddddd;">czVPN is an offshore VPN service dedicated to providing only the most secure and reliable services to its loyal customers.<br> <br><a class="btn btn-outline-light btn-lg action-button" role="button" href="#" style="width:150px;height:50px;">Sign Up</a><br></p>
-                </div>
-                <div class="col-md-6"><img class="img-fluid float-right align-content-center" src="assets/img/data-data-data_2x-1.gif" width="300" height="250"></div>
-            </div>
-        </div>
+
+    <div id="aboutus">
+      <div class="row">
+      <div class="column">
+        <h1>About Us</h1>
+        <center>
+          <p>
+            czVPN is a newly launched VPN service, launched by a small group of developers who meet regularaly in an IRC channel. 
+            We are long users of VPN services and we have over the years notice the lack of speed and security of most common VPN services,
+            together with this evidence we are working to provide a service with everything that other VPN providers do not provide. Our main goal
+            is to provide stronger methods of encryption, faster speeds, along with an easy to use interface. Along with all of thise, we will have
+            very strict measures on how we deal with logging, which we believe to be one of the most important feautrs of any service.<br><br>
+
+            One of the most notable things at make us different from other VPN services is the option to purchase a private VPN server that only
+            you are able to connect to, these private servers enable greater speeds for those looking to hide their IP without lowering their 
+            download speed at an substantial amount. The common VPN service will only offer servers shared by all clients, this causes the server to
+            throttle download speeds, and overall decreases the performance. <br><br>
+            For a more detailed report on how we handle logging, please refer to our <a href="#">privacy policies</a>.<br><br>
+          </p
+        </center>
+      </div>
+      <div class="column top">
+        <img src="img/logo.png"/>
+      </div>
+      </div>
+
+      
     </div>
-    <div class="features-blue" style="background-color:rgba(255,255,255,0.8);color:#222222;">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center" style="color:#172a74;padding:40px;"><strong>Erase Your Digital Footprint</strong></h2>
-                <p class="text-center"></p>
-            </div>
-            <div class="row features">
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-lock icon" style="color:#172a74;"></i>
-                    <h3 class="name">Strong Encryption</h3>
-                    <p class="description" style="color:#37434d;">All data that passes through our servers is encrypted with AES-256 which is currently the most secure option available. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-user-circle-o icon" style="color:#172a74;"></i>
-                    <h3 class="name">No logs</h3>
-                    <p class="description" style="color:#37434d;">We do not log on any of our servers, this assures that no one can prove which traffic came from which person.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-eye icon" style="color:#172a74;"></i>
-                    <h3 class="name">Offshore Locations</h3>
-                    <p class="description" style="color:#37434d;">Most of our servers are in countries that have no censorship/surveillance. Countries with lower freedom use extreme encryption.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-exchange icon" style="color:#172a74;"></i>
-                    <h3 class="name">Leak Protection</h3>
-                    <p class="description" style="color:#37434d;">We host our own dns servers, located in the Netherlands, so that you do not leak your ISP dns.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-warning icon" style="color:#172a74;"></i>
-                    <h3 class="name">Kill switch</h3>
-                    <p class="description" style="color:#37434d;">Our client comes with an automatic killswitch, which stops you from leaking your IP during unexpected disconnetions.<br><br></p>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><i class="fa fa-bitcoin icon" style="color:#172a74;"></i>
-                    <h3 class="name">BitCoin</h3>
-                    <p class="description" style="color:#37434d;">To increase the anonymity of your VPN experience, we have integrated a BitCoin payment system.</p>
-                </div>
-            </div>
-        </div>
-        <h1 style="color:#172a74;"><strong>Our Locations</strong></h1>
-    </div>
-    <div class="projects-horizontal">
-        <div class="container">
-            <div class="intro">
-                <p class="text-center" style="line-height:1;">For a full list of our offered locations, full list <a href="https://czvpn.com/locations">here</a></p>
-            </div>
-            <div class="row projects">
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/se.svg"></a></div>
-                        <div class="col">
-                            <h3 class="name">Sweden</h3>
-                            <p class="description">Internet Surveillance: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Internet Censorship: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enemy Of Internet: No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data Retention: 6 Months<br></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/nl.svg"></a></div>
-                        <div class="col">
-                            <h3 class="name">Netherlands</h3>
-                            <p class="description">Internet Surveillance: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Internet Censorship: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enemy Of Internet: No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data Retention: 6 Months<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/lv.svg"></a></div>
-                        <div class="col">
-                            <h3 class="name">Latvia</h3>
-                            <p class="description">Internet Surveillance: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Internet Censorship: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enemy Of Internet: No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> Data Retention: 18 Months<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/us.svg"></a></div>
-                        <div class="col">
-                            <h3 class="name">USA</h3>
-                            <p class="description">Internet Surveillance: Very High &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Internet Censorship: Low &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; Enemy Of Internet: Yes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data Retention: 1 Year<br><br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div></div>
-    <div class="demo" style="padding:40px;">
-        <h1 style="color:#172a74;padding:40px;"><strong>Pricing</strong></h1>
-        <div class="container" style="padding:40px;">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="pricingTable">
-                        <h1 class="title">FREE</h1>
-                        <div class="price-value" style="background-color:#1485ee;"><span class="month">per month</span><span class="amount">0<span class="currency">$</span><span class="value">00</span></span>
-                        </div>
-                        <ul class="list-unstyled pricing-content">
-                            <li>1 Location</li>
-                            <li>Internet Kill Switch<br></li>
-                            <li>DNS Leak Protection<br></li>
-                            <li>Limited Bandwith</li>
-                            <li>Bulletproof Encryption</li>
-                            <li>No Logs</li>
-                        </ul><a class="btn btn-outline-primary btn-lg" role="button" href="#" style="width:50%;">Sign Up</a></div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="pricingTable">
-                        <h1 class="title">MONTHLY</h1>
-                        <div class="price-value" style="background-color:#1485ee;"><span class="month">per month</span><span class="amount">4<span class="currency">$</span><span class="value">99</span></span>
-                        </div>
-                        <ul class="list-unstyled pricing-content">
-                            <li>9 Locations</li>
-                            <li>Internet Kill Switch</li>
-                            <li>DNS Leak Protection</li>
-                            <li>Unlimited Bandwidth</li>
-                            <li>Bulletproof Encryption</li>
-                            <li>No Logs</li>
-                        </ul><a class="btn btn-outline-primary btn-lg" role="button" href="#" style="width:50%;">Sign Up</a></div>
-                </div>
-                <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-0">
-                    <div class="pricingTable">
-                        <h1 class="title">YEARLY</h1>
-                        <div class="price-value" style="background-color:#1485ee;"><span class="month">per month</span><span class="amount">40<span class="currency">$</span><span class="value">99</span></span>
-                        </div>
-                        <ul class="list-unstyled pricing-content">
-                            <li>9 Locations</li>
-                            <li>Internet Kill Switch</li>
-                            <li>DNS Leak Protection</li>
-                            <li>Unlimited Bandwidth</li>
-                            <li>Bulletproof Encryption</li>
-                            <li>No Logs</li>
-                        </ul><a class="btn btn-outline-primary btn-lg" role="button" href="#" style="width:50%;">Sign Up</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-basic" style="background-color:#f6f6f6;">
-        <footer>
-            <div class="social"><a href="https://github.com/czvpn"><i class="icon ion-social-github"></i></a><a href="https://twitter.com/czvpn"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-chatbox-working"></i></a></div>
-            <ul
-                class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">FAQ</a></li>
-                <li class="list-inline-item"><a href="#">Sign In/Sign Up</a></li>
-                <li class="list-inline-item"><a href="#">Terms Of Use</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                </ul>
-                <p class="copyright">czVPN © 2018</p>
-        </footer>
-    </div>
-    <div class="features-clean"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
