@@ -1,0 +1,27 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightGrey;
+  padding: 10px;
+  max-width: 1500px;
+}
+
+.card {
+  background-color: teal;
+  margin: 25px;
+  height: 300px;
+  
+  &:last-child {
+    // margin-right: 0;
+  }
+}
+
+.flexy {
+  flex-grow: 1;
+  min-width: 300px;
+}
+
+// important because the javascript is being overwritten
+.first {
+  background-color: salmon !important;
+}
