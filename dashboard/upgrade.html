@@ -2,6 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="../js/jquery.js"></script>
+
+<link rel="stylesheet" href="../css/tooltip.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <style>
 body {
@@ -297,10 +301,21 @@ small
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    height: 100%;
 }
+
+
 </style>
 </head>
 <body>
+
+  <script>
+  $('button').tooltip({
+    content: function() {
+        return $(this).attr('title');
+    }
+})  
+  </script>
 
 <div class="sidebar">
   <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -314,19 +329,17 @@ small
 
 <div class="content">
 
-    <h2>Tabs</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
+    <h2 style="margin: 0; padding: 0; color: #0f86da;">Choose the type of plan.</h2>
+    <p style="Color: #3199dc;margin: 0;" >Choose the plan that best fits your needs.</p><br>
     
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">Shared VPN</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Private VPN</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Custom VPN</button>
+      <button class="tablinks tooltip" title="A shared VPN gives you access to all of our servers, but other users will also connect to which only allows limited speeds. " onclick="openCity(event, 'London')">Shared VPN </button>
+      <button class="tablinks" title="A private VPN is a server which only you will be able to connect, which allows greater speeds. We recommend this option for gamers." onclick="openCity(event, 'Paris')">Private VPN</button>
+      <button class="tablinks" title="Custom VPN plans allow you to pay for smaller amount of times, or you may decrease the price by limiting which servers you may connect to." onclick="openCity(event, 'Tokyo')">Custom VPN</button>
     </div>
     
     <div id="London" class="tabcontent">
-      <ul>
-          <li></li>
-        </ul>
+      <iframe style="width: 100%; height: 100%; margin: 0; top: 0%; border: none;" src="pricing.html"></iframe>
     </div>
     
     <div id="Paris" class="tabcontent">
