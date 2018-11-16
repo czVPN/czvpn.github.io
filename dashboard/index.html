@@ -2,79 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/sidebar.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <style>
-body {
-  margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
-
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #0984e3;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-hr { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) }
-
-.sidebar a {
-  display: block;
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-}
- 
-.sidebar a.active {
-
-
-  color: rgb(51, 51, 51);
-  
-}
-
-
-a
-{
-  color: #0984e3;
-}
-
-
-
-.sidebar a:hover {
-
-       background-color: #3199dc;
-      -webkit-transition: background-color 100ms linear;
-      -ms-transition: background-color 100ms linear;
-      transition: background-color 100ms linear;
-}
-
-div.content {
-  margin-left: 200px;
-  padding: 10px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -107,15 +37,17 @@ div.content {
 .card {
   padding: 16px;
   text-align: center;
-  background-color: #a29bfe;
-  color: #5d50c0;
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #0f86da;
 }
 
 .card-wide {
   padding: 16px;
   text-align: center;
-  background-color: #5aa1e7;
-  color: white;
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #0080ff;
 }
 
 
@@ -154,21 +86,25 @@ div.content {
 {
 
   padding: 10px 16px;
-  background-color: #81ecec;
-  color: #009491;
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  color: #8a6d3b;
 }
 
 .servers-online
 {
-  background-color: #ffeaa7;
-  color: #e9b659;
+background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #27ae60;
+
+
 }
 .helpbox
 {
   padding: 2px 10px;
-  background-color: #dff0d8;
-  border-color: #d0e9c6;
-  color: #3c763d;
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  color: #8a6d3b;
 }
 
 .card-wide a
@@ -192,15 +128,17 @@ div.content {
   padding: 10px;
   text-decoration: none;
   color: white;
-  transition: background-color 0.5s ease;
+  background-color:  #74b9ff;
+  opacity: 0.5;
+  transition: 0.3s ease; 
   
 }
 
 
 .button:hover
 {
-  background-color:  #3199dc;
-
+  color: white;
+  opacity: 1;
 }
 
 .card-wide a
@@ -208,6 +146,7 @@ div.content {
   opacity: 0.5;
   transition: 0.3s ease;
 }
+
 .hoverimg
 {
    opacity: 0.5;
@@ -222,8 +161,9 @@ div.content {
 {
 
   padding: 10px 16px;
-  background-color: #ff7675;
-  color: #810000;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+border: 1px solid rgba(34,36,38,.15);
 }
 
 .newsbox h1
@@ -239,6 +179,21 @@ div.content {
 .newsbox small
 {
   padding-left: 10px;
+}
+
+article h2
+{
+  color: #5aa1e7;
+}
+
+article small
+{
+  color: #4079b1;
+}
+
+article p
+{
+  color: #616666;
 }
 </style>
 </head>
@@ -296,8 +251,7 @@ div.content {
   </div><br>
 
   <div class="newsbox">
-    <h1>Latest News</h1>
-    <hr>
+    <h1></h1>
     <article>
       <h2>We are launching the website (almost):</h2>
       <small>Nov 9, 2018 by Edward</small>

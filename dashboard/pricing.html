@@ -2,10 +2,27 @@
 <html lang="en" >
 
 <head>
+  <style>
+    body
+    {
+      padding: 0;
+      margin: 0;
+    }
+  .fa-check-circle
+  {
+    color: green;
+  }
+
+  .fa-times-circle
+  {
+    color: red;
+  }
+  </style>
   <meta charset="UTF-8">
   <title>Responsive Flip Pricing Table</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width">
   
   
@@ -25,7 +42,10 @@
 				<label for="yearly-1">Yearly</label>
 				<span class="switch"></span>
 			</p>
-		</div>
+    </div>
+    
+
+
 		<ul class="pricing-list bounce-invert">
 			<li>
 				<ul class="pricing-wrapper">
@@ -34,22 +54,24 @@
 							<h2>Basic</h2>
 							<div class="price">
 								<span class="currency">$</span>
-								<span class="value">30</span>
+								<span class="value">2.99</span>
 								<span class="duration">mo</span>
 							</div>
 						</header>
 						<div class="pricing-body">
 							<ul class="pricing-features">
-								<li><em>5</em> Email Accounts</li>
-								<li><em>1</em> Template Style</li>
-								<li><em>25</em> Products Loaded</li>
-								<li><em>1</em> Image per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
+								<li><span style="float: left;  padding-left: 40px;">Absolutely no logging</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> devices at once</span><em style="float: right; padding-right: 10px;"><i class="fas fa-times-circle"></i></em></li>
+                <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+								<li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> locations</span><em style="float: right; padding-right: 10px;"><i class="fas fa-times-circle"></i></em></li>
+								<li><span style="float: left;  padding-left: 40px;">Torrenting</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+								<li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                <li><span style="float: left;  padding-left: 40px;">Network kill switch</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                <li><span style="float: left;  padding-left: 40px;">DNS leak protection</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
 							</ul>
 						</div>
 						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
+							<a class="select" href="#">Upgrade</a>
 						</footer>
 					</li>
 					<li data-type="yearly" class="is-hidden">
@@ -57,72 +79,79 @@
 							<h2>Basic</h2>
 							<div class="price">
 								<span class="currency">$</span>
-								<span class="value">320</span>
+								<span class="value">50.00</span>
 								<span class="duration">yr</span>
 							</div>
 						</header>
 						<div class="pricing-body">
 							<ul class="pricing-features">
-								<li><em>5</em> Email Accounts</li>
-								<li><em>1</em> Template Style</li>
-								<li><em>25</em> Products Loaded</li>
-								<li><em>1</em> Image per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
+                  <li><span style="float: left;  padding-left: 40px;">Absolutely no logging</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> Devices at once</span><em style="float: right; padding-right: 10px;"><i class="fas fa-times-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> locations</span><em style="float: right; padding-right: 10px;"><i class="fas fa-times-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Torrenting</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Network kill switch</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">DNS leak protection</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
 							</ul>
 						</div>
 						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
+							<a class="select" href="#">Upgrade</a>
 						</footer>
 					</li>
-				</ul>
+        </ul>
+      
 			</li>
 			<li class="exclusive">
 				<ul class="pricing-wrapper">
 					<li data-type="monthly" class="is-visible">
 						<header class="pricing-header">
-							<h2>Exclusive</h2>
+							<h2>Pro</h2>
 							<div class="price">
 								<span class="currency">$</span>
-								<span class="value">60</span>
+								<span class="value">5.99</span>
 								<span class="duration">mo</span>
 							</div>
 						</header>
 						<div class="pricing-body">
 							<ul class="pricing-features">
-								<li><em>15</em> Email Accounts</li>
-								<li><em>3</em> Template Styles</li>
-								<li><em>40</em> Products Loaded</li>
-								<li><em>7</em> Images per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
+                  <li><span style="float: left;  padding-left: 40px;">Absolutely no logging</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> devices at once</span><em style="float: right; padding-right: 10px;"><i class="fas fa-times-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> locations</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Torrenting</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Network kill switch</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">DNS leak protection</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
 							</ul>
 						</div>
 						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
+							<a class="select" href="#">Upgrade</a>
 						</footer>
 					</li>
 					<li data-type="yearly" class="is-hidden">
 						<header class="pricing-header">
-							<h2>Exclusive</h2>
+							<h2>Pro</h2>
 							<div class="price">
 								<span class="currency">$</span>
-								<span class="value">630</span>
+								<span class="value">61.00</span>
 								<span class="duration">yr</span>
 							</div>
 						</header>
 						<div class="pricing-body">
 							<ul class="pricing-features">
-								<li><em>15</em> Email Accounts</li>
-								<li><em>3</em> Template Styles</li>
-								<li><em>40</em> Products Loaded</li>
-								<li><em>7</em> Images per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
+                  <li><span style="float: left;  padding-left: 40px;">Absolutely no logging</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> devices at once</span><em style="float: right; padding-right: 10px;"><i class="fas fa-times-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em></span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Torrenting</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Network kill switch</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">DNS leak protection</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
 							</ul>
 						</div>
 						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
+							<a class="select" href="#">Upgrade</a>
 						</footer>
 					</li>
 				</ul>
@@ -131,48 +160,54 @@
 				<ul class="pricing-wrapper">
 					<li data-type="monthly" class="is-visible">
 						<header class="pricing-header">
-							<h2>Pro</h2>
+							<h2>Elite</h2>
 							<div class="price">
 								<span class="currency">$</span>
-								<span class="value">90</span>
+								<span class="value">12.99</span>
 								<span class="duration">mo</span>
 							</div>
 						</header>
 						<div class="pricing-body">
 							<ul class="pricing-features">
-								<li><em>20</em> Email Accounts</li>
-								<li><em>5</em> Template Styles</li>
-								<li><em>50</em> Products Loaded</li>
-								<li><em>10</em> Images per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
+                  <li><span style="float: left;  padding-left: 40px;">Absolutely no logging</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> devices at once</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> locations</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Torrenting</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Network kill switch</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">DNS leak protection</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Included private server</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
 							</ul>
 						</div>
 						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
+							<a class="select" href="#">Upgrade</a>
 						</footer>
 					</li>
 					<li data-type="yearly" class="is-hidden">
 						<header class="pricing-header">
-							<h2>Pro</h2>
+							<h2>Elite</h2>
 							<div class="price">
 								<span class="currency">$</span>
-								<span class="value">950</span>
+								<span class="value">80.99</span>
 								<span class="duration">yr</span>
 							</div>
 						</header>
 						<div class="pricing-body">
 							<ul class="pricing-features">
-								<li><em>20</em> Email Accounts</li>
-								<li><em>5</em> Template Styles</li>
-								<li><em>50</em> Products Loaded</li>
-								<li><em>10</em> Images per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
+                  <li><span style="float: left;  padding-left: 40px;">Absolutely no logging</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> devices at once</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;"><em>Unlimited</em> locations</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Torrenting</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Customize encryption</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Network kill switch</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">DNS leak protection</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
+                  <li><span style="float: left;  padding-left: 40px;">Included private server</span><em style="float: right; padding-right: 10px;"><i class="fas fa-check-circle"></i></em></li>
 							</ul>
 						</div>
 						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
+							<a class="select" href="#">Upgrade</a>
 						</footer>
 					</li>
 				</ul>

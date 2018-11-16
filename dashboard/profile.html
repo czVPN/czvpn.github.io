@@ -2,80 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/sidebar.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" href="../css/font-normal.css">
-
 <style>
-body {
-  margin: 0;
-  font-family: 'Quicksand';
-    font-weight: normal;
-    font-style: normal;
-}
-
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #0f86da;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  -webkit-box-shadow:0px 0px 30px 10px #cecece ;
--moz-box-shadow:0px 0px 30px 10px #cecece ;
-box-shadow:0px 0px 30px 10px #cecece ;
-}
-
-hr { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) }
-
-.sidebar a {
-  display: block;
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-}
- 
-.sidebar a.active {
-
-
-  color: rgb(51, 51, 51);
-  
-}
-
-
-
-.sidebar a:hover {
-
-      background-color: #3199dc;
-      -webkit-transition: background-color 100ms linear;
-      -ms-transition: background-color 100ms linear;
-      transition: background-color 100ms linear;
-}
-
-div.content {
-  margin-left: 200px;
-  padding: 10px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -87,7 +16,6 @@ div.content {
   width: 25%;
   padding: 0 10px;
 }
-
 
 .column-wide {
   float: left;
@@ -107,33 +35,25 @@ div.content {
 
 /* Style the counter cards */
 .card {
-
   padding: 16px;
   text-align: center;
-  background-color: #0f86da;
-  color: white;
-}
-
-.card-left {
-
-  padding: 16px;
-  text-align: left;
-  background-color: #0f86da;
-  color: white;
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #0f86da;
 }
 
 .card-wide {
-
   padding: 16px;
   text-align: center;
-  background-color: #0f86da;
-  color: white;
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #0080ff;
 }
 
 
 .card small
 {
-  font-size: 12px;
+
 }
 
 
@@ -166,16 +86,25 @@ div.content {
 {
 
   padding: 10px 16px;
-  background-color: #0f86da;
-  color: white;
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  color: #8a6d3b;
 }
 
+.servers-online
+{
+background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #27ae60;
+
+
+}
 .helpbox
 {
   padding: 2px 10px;
-  background-color: #0f86da;
-  color: white;
-
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  color: #8a6d3b;
 }
 
 .card-wide a
@@ -193,65 +122,102 @@ div.content {
   color: rgb(223, 223, 223);
 }
 
-small
-{
-  font-size: 12px;
-}
-
 .button
 {
   border: 1px solid white;
   padding: 10px;
   text-decoration: none;
   color: white;
-  transition: background-color 0.5s ease;
+  background-color:  #74b9ff;
+  opacity: 0.5;
+  transition: 0.3s ease; 
+  
 }
 
 
 .button:hover
 {
-  background-color:  #3199dc;
-
+  color: white;
+  opacity: 1;
 }
 
 .card-wide a
 {
   opacity: 0.5;
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.card-wide a:hover {
+.hoverimg
+{
+   opacity: 0.5;
+  transition: 0.3s ease; 
+}
+
+.card-wide a:hover, .hoverimg:hover {
     opacity: 1;
-
-    /** default is 1, scale it to 1.5 */
-    transform: scale(1.5, 1.5);
-
-    /** translate 50px from left, and 40px from top */
-    /** transform: translate(50px, 40px); *//
-
-    /** combine both scale and translate */
-    /** transform: scale(1.5, 1.5) translate(50px, 40px); */
 }
 
-.delete-button
+.newsbox
 {
-  width: 100%;
-  background-color: #0f86da;
-  text-decoration: none;
-  padding: 10px;
+
+  padding: 10px 16px;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+border: 1px solid rgba(34,36,38,.15);
+}
+
+.newsbox h1
+{
   text-align: center;
-  color: white;
-  border: 1px solid white;
-  width: 100%;
-  float: right;
-  transition: background-color 0.5s ease;
 }
 
-.delete-button:hover
+.newsbox h2
 {
-  background-color:  #3199dc;
+  line-height: 1px;
 }
 
+.newsbox small
+{
+  padding-left: 10px;
+}
+
+article h2
+{
+  color: #5aa1e7;
+}
+
+article small
+{
+  color: #4079b1;
+}
+
+article p
+{
+  color: #616666;
+}
+
+.userinfo
+{
+    padding: 5px;
+    max-width: 300px;
+
+}
+
+.userinfo h3
+{
+
+}
+
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.user-data
+{
+    padding: 5px;
+}
 </style>
 </head>
 <body>
@@ -262,50 +228,42 @@ small
   <a href="upgrade.html"><i class="fa fa-fw fa-shopping-cart"></i> Upgrade</a>
   <a href="#contact"><i class="fa fa-fw fa-server"></i> Server Status</a>
 <hr>
-<a href="settings.html"><i class="fa fa-fw fa-cog"></i> Settings</a>
+<a href="#contact"><i class="fa fa-fw fa-cog"></i> Settings</a>
   <a href="settings.html"><i class="fa fa-fw fa-sign-out-alt"></i> Sign Out</a>
 </div>
 
 <div class="content">
 
-  <div class="server-status">
-        <div class="row">
-            <div class="column">
-              <div class="card-left">
-                <center><h2>User Information<br></><hr></center>
-                <p>Username: bob69position <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                <p>Email: N/A <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                <p>Password: ********* <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
+    <div class="userinfo">
+        <table style="width:100%">
+            <tr>
+                <th>Username:</th>
+                <td>TonyMcBrony</td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td>************</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="userinfo">
+            <table style="width:100%">
+                <tr>
+                    <th>Plan:</th>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <th>Expires:</th>
+                    <td>************</td>
+                </tr>
+            </table>
+        </div>
+    <hr>
+ 
 
-                <a class="delete-button" href="#">Delete Account</a><br><br>              
-              </div>
-            </div>
-            <div class="column">
-                <div class="card-left">
-                    <center><h2>Easy Configuration<hr></center>
-                    <p>Data Encryption: AES-256 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <p>Data authentication: SHA256 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <p>Handshake Encryption: RSA-4096 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <a class="delete-button" href="#">Reset Settings</a><br><br> 
-                </div>
-            </div>
-            <div class="column">
-                <div class="card-left">
-                    <center><h3>Client Encryption<hr></h3></center>
-                    <p>Data Encryption: AES-256 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <p>Data authentication: SHA256 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <p>Handshake Encryption: RSA-4096 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <center><h3>Server Encryption<br><small>Only edit these setting if you have rented a private server.</small><hr></h3></center>
-                    <p>Data authentication: SHA256 <a style="float: right; color: black;" href="#"><i class="fas fa-edit"></i></a></p>
-                    <a class="delete-button" href="#">Reset Settings</a><br><br>
-
-                </div>
-            </div>
-          </div>
-
-  </div>
-  </div><br>
-
+  
+</div><br>
   
 </body>
 </html>

@@ -1,5 +1,9 @@
-.sidebar
-{
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+  
+  .sidebar {
     margin: 0;
     padding: 0;
     width: 200px;
@@ -7,51 +11,63 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-}
-
-.sidebar a {
-display: block;
-color: black;
-padding: 16px;
-text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-background-color: #4CAF50;
-color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-background-color: #555;
-color: white;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-margin-left: 200px;
-padding: 1px 16px;
-height: 1000px;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-.sidebar {
-    width: 100%;
-    height: auto;
-    color: #74bbe7
-    position: relative;
-}
-
-
-.sidebar a {float: left;}
-div.content {margin-left: 0;}
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-.sidebar a {
-    text-align: center;
-    float: none;
-}
+  }
+  
+  hr { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    opacity: 0.5;
+  }
+   
+  .sidebar a.active {
+  
+  
+    color: rgb(51, 51, 51);
+    
+  }
+  
+  
+  a
+  {
+    color: #0984e3;
+  }
+  
+  
+  
+  .sidebar a:hover {
+  
+        background-color: #ddd;
+         opacity: 1;
+        -webkit-transition: background-color 100ms linear;
+        -ms-transition: background-color 100ms linear;
+        transition: background-color 100ms linear;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 10px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
